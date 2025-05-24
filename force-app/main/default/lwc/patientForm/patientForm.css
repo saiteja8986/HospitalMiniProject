@@ -1,0 +1,20 @@
+.background {
+    background-image: url("/resource/abc");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+/* Card-level background */
+.card-background {
+    background-image: url("/resource/nature");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    padding: 1rem;
+    backdrop-filter: blur(5px); /* optional: makes it readable */
+    background-color: rgba(255, 255, 255, 0.6); /* optional overlay */
+}

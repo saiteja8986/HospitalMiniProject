@@ -1,0 +1,17 @@
+<template>
+    <div class="background">
+        <lightning-card title="Patient Form" icon-name="custom:custom63">
+            <div class="card-background">
+                <lightning-input label="Patient Name" value={patientName} onchange={handleInputChange} data-id="patientName"></lightning-input>
+                <lightning-input label="Age" type="number" value={age} onchange={handleInputChange} data-id="age"></lightning-input>
+                <lightning-combobox label="Sex" value={sex} options={sexOptions} onchange={handleInputChange} data-id="sex"></lightning-combobox>
+                <lightning-input label="Phone" value={phone} onchange={handleInputChange} data-id="phone"></lightning-input>
+                <lightning-input label="Issue" value={issue} onchange={handleInputChange} data-id="issue"></lightning-input>
+                <div class="slds-var-m-top_medium slds-align_absolute-center">
+                    <lightning-button variant="brand" label="Save" onclick={handleSavePatient}></lightning-button>
+                </div>
+
+            </div>
+        </lightning-card>
+    </div>
+</template>
